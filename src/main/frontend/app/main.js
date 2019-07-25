@@ -11,9 +11,7 @@ const pageMap = {
 
 
 for(const domId in pageMap) {
-  console.log(domId)
   if(document.getElementById(domId)) {
-    console.log(domId)
     const Component = pageMap[domId]
     ReactDom.render(<Component />,document.getElementById(domId))
   }
